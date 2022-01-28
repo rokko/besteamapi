@@ -33,7 +33,7 @@ const generateMetadata = async (data) => {
     meta['id'] = data['token_id'];
     meta['name'] = data['name'];
     meta['description'] = data['description'];
-    meta['image'] = "https://www.beasteam.io/api/image/"+data['token_id']+".mp4";
+    meta['image'] = "https://www.api.beasteam.io/images/"+data['token_id']+".mp4";
     meta['external_link'] = "https://www.besteam.io/";
     meta['attributes'] = []
 
