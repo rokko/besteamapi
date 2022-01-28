@@ -114,7 +114,15 @@ app.get('/apartment_size', async function(req, res) {
     return res.send(ap_size);
 })
 
-
+//RETRIEVE IMAGE FROM TOKENID
+app.get('/images/:token_id\.:ext?', async function(req, res) {
+    const token_id = parseInt(req.params.token_id).toString();
+    if(ct.existTokenId(token_id)){
+        return res.sendFile(__dirname + "/nft/"+token_id+".mp4");
+    }else{
+        return res.send({"Message": "tokenId doesn't exist"});
+    }
+})
 
 
 
