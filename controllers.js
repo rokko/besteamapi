@@ -16,9 +16,9 @@ const writeTokenUri = (uri) => {
     jsonfile.writeFileSync(pathDB, tokensJson, {spaces:4});
 }
 
-const getTokenUri = (tokenId) => {
+const getTokenUri = async (tokenId) => {
     const tokenJson = jsonfile.readFileSync(pathDB);
-    return tokenJson["token_uris"][tokenId];
+    return await tokenJson["token_uris"][tokenId];
 }
 
 const existTokenId = (tokenId) => {
