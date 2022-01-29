@@ -21,7 +21,7 @@ app.get('/', function(req, res){
 
 
 //GET TOKEN METADATA FROM TOKENID
-app.get('/asset/:token_id\.:ext?', function(req, res) {
+app.get('/asset/:token_id', function(req, res) {
     const tokenId = parseInt(req.params.token_id).toString();
     const tokenUri = ct.getTokenUri(tokenId);
     res.send(tokenUri);
