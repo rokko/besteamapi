@@ -1,5 +1,33 @@
 {
     "token_uris": [
-        
+        {
+            "id": 0,
+            "name": "Ball",
+            "description": "This is a base ball of Besteam's metaverse",
+            "image": "https://besteam.mypinata.cloud/ipfs/QmbrJz9zjYH4UPgDr31KFxkH3nqZp7voVJy1gSFE7iAscm",
+            "external_link": "https://www.besteam.io/",
+            "attributes": [
+                {
+                    "trait_type": "rarity",
+                    "value": "Base"
+                },
+                {
+                    "trait_type": "brand",
+                    "value": "B01"
+                },
+                {
+                    "trait_type": "design",
+                    "value": "BL01"
+                },
+                {
+                    "trait_type": "first_color",
+                    "value": "Green wheel"
+                },
+                {
+                    "trait_type": "second_color",
+                    "value": "Black"
+                }
+            ]
+}
     ]
 }
